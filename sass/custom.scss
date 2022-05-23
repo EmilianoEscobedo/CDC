@@ -1,1 +1,52 @@
+// color pattern //
+$first: #224962;
+$second: #A9CAB5;
+$third: #BBA14F;
+
+// fonts pattern //
+@import url('/fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,500;0,600;1,500&display=swap');
+$font-primary: 'ClashDisplay-Variable', 'ClashDisplay-Bold', 'ClashDisplay-Semibold';
+$font-secondary: 'EB Garamond';
+
+//fonts patern //
+$font-size-base: 1rem;
+
+//Custom bootstrap variables//
+
+//colors
+$primary: $first;
+$secondary: $second;
+$tertiary: $third;
+
+//fonts
+$font-family-sans-serif: $font-primary;
+$font-family-monospace: $font-secondary;
+$h1-font-size:  $font-size-base * 3;
+
+//btn
+
+$btn-border-radius: 0;
+$btn-border-width:0;
+$btn-focus-width:0;
+$btn-font-size: 1.5rem;
+
+$card-bg: $first;
+$card-color: white;
+$card-border-radius: 0;
+
+//Custom Styles//
+.header__nav-size{
+    height: 7rem;
+}
+
+.home__carousel-title{
+    bottom: 0;
+    color: white;
+    margin:0% 0% 8% 8%;
+    position: absolute;
+    // background: linear-gradient(rgba(187,161,79,0.1),rgba(34,73,98,0.1));
+}
+
+
 @import "../node_modules/bootstrap/scss/bootstrap";

@@ -8,97 +8,154 @@
     <title>CDC</title>
 </head>
 <body>
-    <!-- Header start -->
-    <header>
-        <a href="">
-            <img src="" alt="">
-        </a>
-        <a href="">
-            Servicios
-        </a>
-        <a href="">
-            Nosotros
-        </a>
-        <a href="">
-            Cotiza tu obra
-        </a>
-    </header>
-    <!-- Header end -->
-    <!-- home start -->
-    <section>
-        <div>
-            <title>
-                <h1>La forma inteligente de construir</h1>
-            </title>
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-    </section>
-    <!-- home end -->
-    <!-- Services start -->
-    <section>
-        <div>
-            <h2>servicio 1</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam quis eveniet culpa quod perferendis. Suscipit repellendus, ut facere quidem sequi itaque a dolorum dolorem voluptates cumque animi accusantium, reiciendis sed.</p>
-        </div>
-        <div>
-            <h2>servicio 2</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis, earum. Sapiente officia, odio quia nemo itaque earum nam eum sit ratione quos! Non mollitia explicabo modi vel voluptates temporibus beatae.</p>
-        </div>
-        <div>
-            <h2>servicio 3</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae aspernatur architecto alias quibusdam, excepturi sequi quam, at modi eaque in neque inventore veritatis iure fugiat deserunt dolorum consectetur assumenda corporis.</p>
-        </div>
-        <div>
-            <h2>servicio 4</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero, eos? Magni, corrupti voluptates? Perspiciatis itaque tempore delectus ea repellendus eos magni ullam quasi? Autem veritatis repellat quod natus, optio fugit?</p>
-        </div>
-    </section>
-    <!-- Services end -->
-    <!-- Who we are start -->
-    <section>
-        <div>
-            <h2>Confianza <br> estás en buenas manos</h2>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, accusamus! Deserunt vero perspiciatis architecto enim, eius fugit facere, minus voluptates porro reprehenderit nulla placeat labore inventore. Rerum libero totam quis.</p>
-        </div>
-        <div>
-            <img src="" alt="">
-        </div>
-    </section>
-    <!-- Who we are end -->
-    <!-- Lets work together start -->
-    <section>
-        <h2>Cotiza tu obra</h2>
-        <form action="get">
-            <label for="name">Nombre</label>
-            <input id="name" name="name" type="text">
-            <label for="tipoObra">Tipo de obra</label>
-            <input id="tipoObra" name="tipoObra" type="text">
-        </form>
-    </section>
-    <!-- Lets work together end -->
-    <!-- footer start -->
-    <footer>
-        <a href="">
-            <img src="" alt="">
-        </a>
-        <a href="">
-            <img src="" alt="">
-        </a>
-        <a href="">
-            <img src="" alt="">
-        </a>
-        <a href="">
-            <img src="" alt="">
-        </a>
-        <a href="">
-            <img src="" alt="">
-        </a>
-        <p>2022 copyright - Built by Be.CreativeCloud</p>
-    </footer>
-
-
-
+    <div id="page">
+        <!-- Header start -->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light header__nav-size">
+                <div class="container-fluid">
+                  <a class="navbar-brand ms-5" href="#">
+                      <img src="/images/header/header-logo.svg" alt="" class="img-fluid" width="332" height="89">
+                    </a>
+                  <div class="d-flex justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item px-5">
+                        <a class="nav-link text-primary" href="#">SERVICIOS</a>
+                      </li>
+                      <li class="nav-item px-5">
+                        <a class="nav-link text-primary" href="#">QUIENES SOMOS</a>
+                      </li>
+                      <li class="nav-item px-5">
+                        <a class="nav-link text-primary fw-bold" href="#">COTIZA TU OBRA</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+        </header>
+        <!-- Header end -->
+        <main>
+        <!-- home start -->
+            <section class="home">
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="/images/home/carrousel1.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/images/home/carrousel1.svg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="/images/home/carrousel1.svg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                    <h1 class="home__carousel-title font-monospace fw-bold">La forma inteligente <br> de construir.</h1>
+                  </div>
+            </section>
+            <!-- home end -->
+            <!-- Services start -->
+            <section id="services">
+              <!-- 1 -->
+                <div class="d-grid gap-2">
+                  <button class=" btn1 btn btn-secondary d-flex justify-content-start fw-semibold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#construccion" aria-expanded="false" aria-controls="collapseExample">
+                    CONSTRUCCIÓN <span id="service1" class='text-tertiary'>+</span>
+                  </button>
+                </div>
+              <div class="collapse" id="construccion">
+                <div class="text-white card card-body text-center font-monospace">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique et officiis quia est ducimus. Laudantium dolore corporis, vel eaque iste quo. Eveniet sit voluptate repudiandae accusantium natus possimus molestias. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolorem eum impedit fuga sint nulla, officiis exercitationem aliquid, consectetur deleniti maxime nisi perferendis repellat porro nam sapiente dicta earum vero!
+                </div>
+              </div>
+              <!-- 2 -->
+                <div class="d-grid gap-2">
+                  <button class="btn2 btn btn-secondary d-flex justify-content-start fw-semibold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#electricidad" aria-expanded="false" aria-controls="collapseExample">
+                    ELECTRICIDAD <span id="service2" class='text-tertiary'>+</span>
+                  </button>
+                </div>
+              <div class="collapse" id="electricidad">
+                <div class="card card-body text-center font-monospace">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique et officiis quia est ducimus. Laudantium dolore corporis, vel eaque iste quo. Eveniet sit voluptate repudiandae accusantium natus possimus molestias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi impedit aliquam suscipit corporis quaerat quas architecto tempora minus obcaecati, praesentium repudiandae. Voluptatem, similique. Quibusdam, molestiae ipsam porro ex ab quia!
+                </div>
+              </div>
+              <!-- 3 -->
+                <div class="d-grid gap-2">
+                  <button class="btn3 btn btn-secondary d-flex justify-content-start fw-semibold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#plomeria" aria-expanded="false" aria-controls="collapseExample">
+                    PLOMERIA <span id="service3" class='text-tertiary'>+</span>
+                  </button>
+                </div>
+              <div class="collapse" id="plomeria">
+                <div class="card card-body text-center font-monospace">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique et officiis quia est ducimus. Laudantium dolore corporis, vel eaque iste quo. Eveniet sit voluptate repudiandae accusantium natus possimus molestias. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi consequuntur libero officiis. Possimus nisi dolores voluptate natus vitae corrupti nam, omnis alias aut autem, ut dolorem quas eveniet facilis deserunt.
+                </div>
+              </div>
+              <!-- 4 -->
+                <div class="d-grid gap-2">
+                  <button class="btn4 btn btn-secondary d-flex justify-content-start fw-semibold text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#steelframe" aria-expanded="false" aria-controls="collapseExample">
+                    STEEL FRAME<span id="service4" class='text-tertiary'>+</span>
+                  </button>
+                </div>
+              <div class="collapse" id="steelframe">
+                <div class="card card-body text-center font-monospace">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, similique et officiis quia est ducimus. Laudantium dolore corporis, vel eaque iste quo. Eveniet sit voluptate repudiandae accusantium natus possimus molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique omnis aliquam, ea ab, animi vero cum nesciunt atque, quasi perspiciatis libero earum illo deleniti possimus rem aut assumenda dolore. Ipsa.
+                </div>
+              </div>
+            </section>
+            <!-- Services end -->
+            <!-- Who we are start -->
+            <section>
+                <div>
+                    <h2>Confianza <br> estás en buenas manos</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, accusamus! Deserunt vero perspiciatis architecto enim, eius fugit facere, minus voluptates porro reprehenderit nulla placeat labore inventore. Rerum libero totam quis.</p>
+                </div>
+                <div>
+                    <img src="" alt="">
+                </div>
+            </section>
+            <!-- Who we are end -->
+            <!-- Lets work together start -->
+            <section>
+                <h2>Cotiza tu obra</h2>
+                <form action="get">
+                    <label for="name">Nombre</label>
+                    <input id="name" name="name" type="text">
+                    <label for="tipoObra">Tipo de obra</label>
+                    <input id="tipoObra" name="tipoObra" type="text">
+                </form>
+            </section>
+            <!-- Lets work together end -->
+            <!-- footer start -->
+        </main>
+        <footer>
+            <section class="brand">
+                <a href="">
+                    <img src="" alt="">
+                </a>
+                <a href="">
+                    <img src="" alt="">
+                </a>
+                <a href="">
+                    <img src="" alt="">
+                </a>
+                <a href="">
+                    <img src="" alt="">
+                </a>
+                <a href="">
+                    <img src="" alt="">
+                </a>
+            </section>
+            <section class="legal">
+                <p>2022 copyright - Built by Be.CreativeCloud</p>
+            </section>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="moves.js"></script>
 </body>
 </html>
