@@ -23,7 +23,6 @@ $font-size-base: 1rem;
 $primary: $first;
 $secondary: $second;
 $tertiary: $third;
-$black: #0000;
 
 //fonts
 $font-family-sans-serif: $font-primary;
@@ -42,18 +41,52 @@ $card-color: white;
 $card-border-radius: 0;
 
 //Custom Styles//
+//header//
 .header__nav-size{
     height: 6rem;
 }
-
+//home//
 .home__carousel-title{
     bottom: 0;
     color: white;
     margin:0% 0% 8% 8%;
     position: absolute;
 }
+//services//
 .services__container-title{
     margin-left: 8%;
 }
-
+//whoWeAre//
+.whoWeAre__banner-card{
+    position: absolute;
+    top: 35%;
+    bottom: 10%;
+    right: 12.5%;
+    left: 12.5%;
+}
+//counter//
+.counter__container-number{
+    width: 100%;
+    font-size: 4rem;
+    color: white;
+}
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.dontShow{
+    opacity: 0;
+}
+.animate{
+    animation: show 1.3s}
+//footer//
+.footer__container{
+    background-color: #2A2F35;
+}
 @import "../node_modules/bootstrap/scss/bootstrap";

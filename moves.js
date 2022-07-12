@@ -1,10 +1,11 @@
+// ----------- Services ----------- 
+
 function change(actual){
     if (actual=='-'){
         actual='+'
     }else {actual='-'}
     console.log('ajsj')
     return actual
-    
  };
 
 const services = document.getElementById('services');
@@ -35,3 +36,39 @@ services.addEventListener('click', e =>{
         service6.innerHTML=change(service6.innerHTML);
     };;
 });
+
+// ----------- Counter ----------- 
+
+addEventListener('DOMContentLoaded', () => {
+    const counters = document.getElementsByClassName('number');
+
+    const animateCounters = () => {
+        for (const counter of counters) {
+            let max_quantity = +counter.dataset.total,
+                actual_value = +counter.innerText
+                let time = setInterval(()=> {
+                    counter.innerText = (actual_value +=1);
+                    if (actual_value === max_quantity){
+                        clearInterval(time)
+                        counter.style.color='#BBA14F';
+                    }
+                },150);
+            }
+    }
+    const showCounters = elements => {
+        elements.forEach(element => {
+            if(element.isIntersecting) {
+                element.target.classList.add('animate');
+                element.target.classList.remove('dontShow');
+                setTimeout(animateCounters,300)
+            }
+        });
+    }
+    const observer = new IntersectionObserver(showCounters, {
+        threshold: 0.75
+    })
+    const elementHTML = document.getElementById('counters')
+    observer.observe(elementHTML)
+
+})
+
