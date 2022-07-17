@@ -3,10 +3,9 @@
 const services = document.getElementsByClassName('services');
 
 let service = Array.from(services);
-service.forEach(el => {
-    el.addEventListener('click', () => {
-    let actual = el.children[2].innerHTML;
-    (actual=='+') ? (el.children[2].innerHTML='-', el.children[1].style.fontWeight='500') : (el.children[2].innerHTML='+', el.children[1].style.fontWeight='normal');
+service.forEach(btn => {
+    btn.addEventListener('click', () => {
+    (btn.children[2].innerHTML=='+') ? (btn.children[2].innerHTML='-', btn.children[1].style.fontWeight='500') : (btn.children[2].innerHTML='+', btn.children[1].style.fontWeight='normal');
     });
 });
 
