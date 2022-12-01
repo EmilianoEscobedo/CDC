@@ -1,19 +1,11 @@
 import {createContext, 
     useContext, 
-    useState, 
-    useRef
   } from "react";
   import {useCollectionData} from "react-firebase-hooks/firestore";
   import {app} from "../firebase/credentials";
   import {
     collection,
-    orderBy,
-    limit,
     query,
-    setDoc,
-    doc,
-    serverTimestamp,
-    addDoc,
     getFirestore
   } from "firebase/firestore";
   
