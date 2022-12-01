@@ -1,4 +1,37 @@
+import { useEffect } from "react";
 export const CounterServices = () => {
+  useEffect(()=>{
+    const counters = document.getElementsByClassName('number');
+    const animateCounters = () => {
+        for (const counter of counters) {
+            let max_quantity =+ counter.dataset.total,
+                actual_value =+ counter.innerText
+                if (actual_value != max_quantity){
+                    let time = setInterval(()=> {
+                    counter.innerText = (actual_value +=1);
+                    if (actual_value === max_quantity){
+                        clearInterval(time)
+                        counter.style.color='#BBA14F';
+                    }
+                },150);
+            }}
+    }
+    //API intersectionObserver
+    const showCounters = elements => {
+        elements.forEach(e => {
+            if(e.isIntersecting) {
+                e.target.classList.add('animate');
+                e.target.classList.remove('dontShow');
+                setTimeout(animateCounters,300);
+            }
+        });
+    }
+    const observer = new IntersectionObserver(showCounters, {
+        threshold: 0.75
+    })
+    const elementHTML = document.getElementById('counters')
+    observer.observe(elementHTML)
+  },[])
   return (
     <div id="counters" className="container my-5 text-center bg-primary text-white rounded-3 dontShow">
             <div className="row">
