@@ -1,31 +1,24 @@
 import { useDataContext } from "../contexts/DataContext"
+import '../assets/css/slider.css'
 
 export const Slider = () => {
   const {imgSlider} = useDataContext();
   return (
-    <div>
-      <div id="carouselExampleControls" className="carousel slide img-fluid" data-bs-ride="carousel" style={{minHeight: "800px"}}>
+    <div className="slider__container">
+      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={imgSlider && imgSlider[0].image} className="img-fluid" alt="..." />
+              <img src={imgSlider && imgSlider[0].image} className="img-fluid w-100" alt="image slider 1" />
             </div>
             <div className="carousel-item">
-              <img src={imgSlider && imgSlider[1].image} className="img-fluid" alt="..." />
+              <img src={imgSlider && imgSlider[1].image} className="img-fluid w-100" alt="image slider 2" />
             </div>
             <div className="carousel-item">
-              <img src={ imgSlider && imgSlider[2].image} className="img-fluid" alt="..." />
+              <img src={imgSlider && imgSlider[2].image} className="img-fluid w-100" alt="image slider 3" />
             </div>
           </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
-          <h1 className="home--carousel-title font-monospace fw-bold home--h1-responsive">La forma inteligente <br /> de construir.</h1>
-        </div>
+          <h1 className="slider__title fw-bold">La forma inteligente <br/> de construir.</h1>
+      </div>
   </div>
   )
 }
