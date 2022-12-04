@@ -3,6 +3,7 @@ import { Home } from "./routes/Home";
 import { Detail } from "./routes/Detail";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import './assets/css/index.css'
 
 function App() {
   return (
