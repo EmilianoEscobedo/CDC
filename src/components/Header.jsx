@@ -1,9 +1,12 @@
 import { HashLink } from 'react-router-hash-link'
+import { useLocation } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import Logo from '../assets/logo.svg'
 import '../assets/css/header.css'
 export const Header = (props) => {
   const {children} = props;
+  const location = useLocation();
+  console.log(location)
   return (
     <>
       <header>
@@ -29,13 +32,13 @@ export const Header = (props) => {
             <div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
               <ul className="navbar-nav fs-5">
                 <li className="nav-item px-5">
-                  <HashLink className="header__nav" smooth to="#services">SERVICIOS</HashLink>
+                  {location.pathname == '/' ?  <HashLink className="header__nav" smooth to="#services">SERVICIOS</HashLink> : null}
                 </li>
                 <li className="nav-item px-5">
-                  <HashLink className="header__nav" smooth to="#whoWeAre">QUIENES SOMOS</HashLink>
+                  {location.pathname == '/' ?  <HashLink className="header__nav" smooth to="#whoWeAre">QUIENES SOMOS</HashLink> : null}
                 </li>
                 <li className="nav-item px-5">
-                  <HashLink className="header__nav fw-bold" smooth to="#workWithUs">COTIZA TU OBRA</HashLink>
+                  {location.pathname == '/' ?  <HashLink className="header__nav fw-bold" smooth to="#workWithUs">COTIZA TU OBRA</HashLink> : null}
                 </li>
               </ul>
             </div>
