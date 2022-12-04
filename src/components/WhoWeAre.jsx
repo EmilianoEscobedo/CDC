@@ -15,7 +15,7 @@ export const WhoWeAre = () => {
               <h3 className='whoWeAre__subtitle mb-5'>
               ¿Quiénes somos?
               </h3>
-              <img src={whoWeAre && whoWeAre[0].image} alt="team photo" className='mb-5 img-fluid'/>
+              <img src={whoWeAre && whoWeAre[0].image} alt="team photo" className='mb-5 whoWeAre__img img-fluid'/>
             <p className='whoWeAre__text'>
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil fugiat laudantium omnis! Eum perspiciatis sed quo doloribus? Modi obcaecati dicta ex numquam ipsa cupiditate deserunt, culpa velit, harum beatae adipisci. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod voluptatibus corporis autem in, magnam voluptates natus alias saepe quia reprehenderit, deleniti soluta quidem rerum doloremque? Numquam quis distinctio sit voluptas.
             </p>
