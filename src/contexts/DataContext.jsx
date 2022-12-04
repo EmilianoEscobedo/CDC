@@ -29,11 +29,17 @@ import {createContext,
     const queryServices = query(servicesRef);
     const [servicesData] = useCollectionData(queryServices);
 
+    //whoWeAre data
+    const whoWeAreRef = collection(db, 'assets/images/WhoWeAre');
+    const querywhoWeAre = query(whoWeAreRef);
+    const [whoWeAre] = useCollectionData(querywhoWeAre);
+
     return (
       <dataContext.Provider
         value={{
           imgSlider,
           servicesData,
+          whoWeAre,
         }}
       >
         {children}
