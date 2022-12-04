@@ -1,0 +1,35 @@
+@import url('../fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+
+.header__logo{
+    width: 360px;
+    margin-left: 20px;
+}
+
+.header__nav{
+    text-decoration: none;
+    color: #224962;
+    font-family: 'ClashDisplay-variable';
+}
+
+.header__nav:hover{
+    color: #224962;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #224962;
+    transition: 0.2s;
+}
+
+.header__info{
+    color: #ffff;
+    font-family: 'ClashDisplay-variable';
+    text-decoration: none;
+}
+
+.header__info:hover{
+    color: white;
+}
+
+@media only screen and (max-width:574px) {
+    .header__logo{
+        width: 275px;
+    }
+}

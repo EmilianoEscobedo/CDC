@@ -1,0 +1,22 @@
+@import url('../fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+
+.service__card{
+    text-decoration: none;   
+}
+
+.service__image{
+    width: 200px;
+    height: 200px;
+    border-radius: 4%;
+}
+.service__image:hover{
+    width: 210px;
+    transition: 0.4s;
+}
+
+.service__title{
+    font-family: 'ClashDisplay-variable';
+    color: #224962;
+    border-bottom: 1px solid #BBA14F;
+    border-radius: 4%;
+}

@@ -1,0 +1,32 @@
+@import url('../fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+
+
+.contact__container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.contact__title{
+    font-family: 'EB Garamond';
+    color: #BBA14F;
+    font-size: 52px;
+}
+
+.contact__subtitle{
+    font-family: 'ClashDisplay-variable';
+    color:  #224962;
+}
+
+.contact__text{
+    margin-top: 30px;
+    font-family: 'ClashDisplay-variable';
+    font-size: 20px;
+}
+
+@media only screen and (max-width:574px) {
+    .contact__title{
+        font-size: 36px;
+    }
+    .contact__subtitle{
+        font-size: 20px;
+    }
+}

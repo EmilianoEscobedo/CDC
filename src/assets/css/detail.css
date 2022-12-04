@@ -1,0 +1,18 @@
+@import url('../fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+
+
+
+.detail__container{
+    margin-top: 150px;
+    margin-bottom: 250px;
+}
+.detail__title{
+    font-family: 'ClashDisplay-variable';
+    color: #224962;
+    border-bottom: 1px solid #BBA14F;
+    margin-bottom: 30px;
+}
+
+.detail__image{
+    width: 70%;
+}

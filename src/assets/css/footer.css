@@ -1,0 +1,9 @@
+@import url('../fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+
+footer{
+    font-family: 'ClashDisplay-variable';
+    background-color: #224962;
+}
+.footer__copyright{
+    text-decoration: none;
+}

@@ -1,0 +1,33 @@
+@import url('../fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+
+
+.counterServices__container{
+    margin-top: 100px;
+    background-color: #224962;
+    color: white;
+    font-family: 'ClashDisplay-variable';
+}
+.counterServices__hightlight{
+    color: #BBA14F;
+}
+
+.counterServices__number{
+    width: 100%;
+    font-size: 4rem;
+}
+
+@keyframes show {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.dontShow{
+    opacity: 0;
+}
+.animate{
+    animation: show 1.3s};

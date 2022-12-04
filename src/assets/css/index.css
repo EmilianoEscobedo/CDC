@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+#root{
+    width: 100vw;
+    height: 100vh;
+}

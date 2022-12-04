@@ -1,0 +1,31 @@
+@import url('../fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+
+.whoWeAre__container{
+    background-color: #224962;
+    color: white;
+    margin-top: 150px;
+}
+
+.whoWeAre__title{
+    font-family: 'EB Garamond';
+    color: #BBA14F;
+    font-size: 52px;
+}
+
+.whoWeAre__subtitle{
+    font-family: 'ClashDisplay-variable';
+}
+
+.whoWeAre__text{
+    font-family: 'ClashDisplay-variable';
+    font-size: 18px;
+    font-weight: 500;
+}
+@media only screen and (max-width:574px) {
+    .whoWeAre__title{
+        font-size: 30px;
+    }
+    .whoWeAre__subtitle{
+        font-size: 20px;
+    }
+}

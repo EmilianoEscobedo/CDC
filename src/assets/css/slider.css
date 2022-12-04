@@ -1,0 +1,16 @@
+
+.slider__title{
+    font-family: 'EB Garamond';
+    font-weight: 600;
+    position: absolute;
+    bottom: 8%;
+    left: 8%;
+    color: white;
+    font-size: 52px;
+}
+
+@media only screen and (max-width:574px) {
+    .slider__title{
+        font-size: 28px;
+    }
+}
