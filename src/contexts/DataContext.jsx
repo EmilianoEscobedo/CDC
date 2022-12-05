@@ -1,13 +1,13 @@
 import {createContext, 
     useContext, 
-  } from "react";
-  import {useCollectionData} from "react-firebase-hooks/firestore";
-  import {app} from "../firebase/credentials";
+  } from 'react';
+  import {useCollectionData} from 'react-firebase-hooks/firestore';
+  import {app} from '../firebase/credentials';
   import {
     collection,
     query,
     getFirestore
-  } from "firebase/firestore";
+  } from 'firebase/firestore';
   
   
   export const dataContext = createContext();
@@ -34,12 +34,18 @@ import {createContext,
     const querywhoWeAre = query(whoWeAreRef);
     const [whoWeAre] = useCollectionData(querywhoWeAre);
 
+    //Experience data
+    const experienceRef = collection(db, 'assets/experiences/experiences');
+    const queryexperience = query(experienceRef);
+    const [experience] = useCollectionData(queryexperience);
+
     return (
       <dataContext.Provider
         value={{
           imgSlider,
           servicesData,
           whoWeAre,
+          experience,
         }}
       >
         {children}
