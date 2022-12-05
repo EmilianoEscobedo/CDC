@@ -5,12 +5,13 @@
 }
 
 .service__image{
-    width: 200px;
+    width: 250px;
     height: 200px;
     border-radius: 4%;
 }
+
 .service__image:hover{
-    width: 210px;
+    width: 260px;
     transition: 0.4s;
 }
 
@@ -19,4 +20,10 @@
     color: #224962;
     border-bottom: 1px solid #BBA14F;
     border-radius: 4%;
+}
+
+@media only screen and (max-width:574px) {
+    .service__container{
+        margin-bottom: 35px;
+    }
 }

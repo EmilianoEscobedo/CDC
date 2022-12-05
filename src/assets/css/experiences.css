@@ -1,0 +1,20 @@
+@import url('../fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+
+.experiences__title{
+    font-family: 'EB Garamond';
+    color: #BBA14F;
+    font-size: 52px;
+}
+.experiences__subtitle{
+    font-family: 'ClashDisplay-variable';
+    color: #224962;
+}
+
+@media only screen and (max-width:574px) {
+    .experiences__title{
+        font-size: 36px;
+    }
+    .experiences__subtitle{
+        font-size: 20px;
+    }
+}

@@ -5,7 +5,9 @@
 .detail__container{
     margin-top: 150px;
     margin-bottom: 250px;
+    width: 100%;
 }
+
 .detail__title{
     font-family: 'ClashDisplay-variable';
     color: #224962;
@@ -14,5 +16,13 @@
 }
 
 .detail__image{
-    width: 70%;
+    width: 90%;
+    border-radius: 5%;
+}
+
+@media only screen and (max-width:574px) {
+    .detail__mobile{
+        padding-left: 15px;
+        padding-right: 10px;
+    }
 }

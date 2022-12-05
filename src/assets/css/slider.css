@@ -8,6 +8,9 @@
     color: white;
     font-size: 52px;
 }
+.slider__img{
+    width: 100%;
+}
 
 @media only screen and (max-width:574px) {
     .slider__title{

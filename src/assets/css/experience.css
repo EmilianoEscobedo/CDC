@@ -1,0 +1,27 @@
+@import url('../fonts/ClashDisplay_Complete/Fonts/WEB/css/clash-display.css');
+
+.experience__image{
+    border-radius: 4%;
+    display: block;
+    width: 450px;
+    height: 400px;
+}
+
+.experience__title{
+    position: absolute;
+    z-index: 1;
+    top: 80%;
+    font-family: 'EB Garamond';
+    background-color: #224962;
+    color: #BBA14F;
+    border-radius: 6%;
+    padding: 5px 20px 5px 20px;
+    font-size: 30px;
+}
+
+@media only screen and (max-width:574px) {
+    .experience__image{
+        width: 350px;
+        height: 300px;
+    }
+}
