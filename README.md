@@ -4,7 +4,7 @@ React website for an argentinian bulding company based in Valeria del Mar, Bueno
 This is my third project using react.js in the front-end, it is a simple project, but it allowed me to strengthen knowledge and skills and improve the management of libraries such as react-router-dom
 <br><br>
 
-## :question: What is and why
+## :question: What and why
 The main objective was build a fully responsive landing page, where potential customers can see about the company, its how-to-do filosofy, its projects and can communicate to work with it through a meeting schedule system.
 
 <br><br>
